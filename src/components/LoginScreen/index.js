@@ -1,10 +1,10 @@
 // src/LoginScreen/index.js
 import React, { useState } from 'react';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import app from '../authentication/firebase';
+import app from '../../authentication/firebase';
 import styles from './index.module.css';
-import logo from './../images/logo.png'
-import background from './../images/satoru.jpg'
+import logo from './../../images/logo.png'
+import background from './../../images/satoru.jpg'
 
 const LoginScreen = () => {
   const [email, setEmail] = useState('');
@@ -18,8 +18,10 @@ const LoginScreen = () => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
+      alert('Usuário Logado com Sucesso');
       console.log('Usuário logado com sucesso:', user);
     } catch (error) {
+      alert('Erro ao fazer login');
       console.error('Erro ao fazer login:', error.message);
     }
   };

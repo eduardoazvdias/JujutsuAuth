@@ -1,4 +1,6 @@
-/* src/LoginScreen.module.css */
+@import '../../styles.css';
+
+
 .loginContainer {
   display: flex;
   height: 100vh;
