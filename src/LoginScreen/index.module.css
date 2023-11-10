@@ -1,0 +1,66 @@
+/* src/LoginScreen.module.css */
+.loginContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.loginForm {
+  flex: 0 0 28%;
+  padding: 20px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  background: linear-gradient(to right, #800000, #000000); /* Gradiente vermelho para preto */
+  color: #fff; /* Cor do texto para branco, para melhor contraste */
+}
+
+.logoContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logoContainer img {
+  width: 17vh; /* 17% da largura da tela */
+  height: 15vh; /* 19% da altura da tela usando vh */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  input {
+    margin-right: 10px;
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+  width: 48%; /* Distribui espaço igualmente para os dois botões */
+}
+
+.backgroundImage {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.backgroundImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
