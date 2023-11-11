@@ -41,8 +41,12 @@ const LoginScreen = () => {
             <label htmlFor="remember">Remember me</label>
           </div>
           <div className={styles.buttonsContainer}>
-            <button type="submit">Login</button>
-            <button type="button">Create an Account</button>
+            <button type="submit" className={styles.loginButton}>
+              <span className={styles.buttonIcon}>🔒</span> Login
+            </button>
+            <button type="button" className={styles.createAccountButton}>
+              Create an Account
+            </button>
           </div>
         </form>
       </div>

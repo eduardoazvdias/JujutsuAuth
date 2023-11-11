@@ -1,74 +1,98 @@
-@import '../../styles.css';
-@import '../PasswordField/index.module.css';
+  @import '../../styles.css';
+  @import '../PasswordField/index.module.css';
 
 
-.loginContainer {
-  display: flex;
-  height: 100vh;
-}
+  .loginContainer {
+    display: flex;
+    height: 100vh;
+  }
 
-.loginForm {
-  flex: 0 0 28%;
-  padding: 20px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
-  background: linear-gradient(to right, #800000, #000000); /* Gradiente vermelho para preto */
-  color: #fff; /* Cor do texto para branco, para melhor contraste */
-}
+  .loginForm {
+    flex: 0 0 28%;
+    padding: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    background: linear-gradient(to right, #800000, #000000); /* Gradiente vermelho para preto */
+    color: #fff; /* Cor do texto para branco, para melhor contraste */
+  }
 
-.logoContainer {
-  margin-right: 55px;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
+  .logoContainer {
+    margin-right: 55px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
 
-.logoContainer img {
-  width: 17vh; /* 17% da largura da tela */
-  height: 12vh; /* 19% da altura da tela usando vh */
-}
+  .logoContainer img {
+    width: 17vh; /* 17% da largura da tela */
+    height: 12vh; /* 19% da altura da tela usando vh */
+  }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 
-label {
-  margin-bottom: 10px;
-}
+  label {
+    margin-bottom: 10px;
+  }
 
-.rememberMe {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  margin-left: 15%;
-  margin-top: 6px;
-}
+  .rememberMe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 18%;
+    margin-top: 6px;
+  }
 
-.rememberCheckbox {
-  margin-top: -5px;
-  margin-right: 8px;
-}
+  .rememberCheckbox {
+    margin-top: -5px;
+    margin-right: 8px;
+  }
 
-.buttonsContainer {
-  display: flex;
-  justify-content: space-between;
-}
+  .backgroundImage {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
 
-button {
-  padding: 10px;
-  width: 48%; /* Distribui espaço igualmente para os dois botões */
-}
+  .backgroundImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-.backgroundImage {
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.backgroundImage img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  .buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 107px;
+  }
+  
+  .loginButton,
+  .createAccountButton {
+    width: 65%;
+    height: 42px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .loginButton {
+    background-color: #dc143c;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .createAccountButton {
+    background-color: #008000;
+    color: #fff;
+  }
+  
+  .buttonIcon {
+    margin-right: 10px;
+  }
