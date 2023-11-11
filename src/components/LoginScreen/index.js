@@ -1,10 +1,11 @@
-// src/LoginScreen/index.js
 import React, { useState } from 'react';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import app from '../../authentication/firebase';
 import styles from './index.module.css';
 import logo from './../../images/logo.png'
 import background from './../../images/satoru.jpg'
+import PasswordField from '../PasswordField';
+import EmailField from '../EmailField';
 
 const LoginScreen = () => {
   const [email, setEmail] = useState('');
@@ -33,16 +34,10 @@ const LoginScreen = () => {
           <img src={logo} alt="Logo" />
         </div>
         <form onSubmit={handleLogin}>
-          <label>
-            Email:
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          </label>
-          <label>
-            Senha:
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-          </label>
+          <EmailField label="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <PasswordField label="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
           <div className={styles.rememberMe}>
-            <input type="checkbox" id="remember" />
+            <input type="checkbox" className={styles.rememberCheckbox} />
             <label htmlFor="remember">Remember me</label>
           </div>
           <div className={styles.buttonsContainer}>
